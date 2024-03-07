@@ -21,4 +21,17 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Initial creation instructions
+```
+  rails new railsone -d postgresql -m https://raw.githubusercontent.com/excid3/jumpstart/master/template.rb
+  
+  cd railsone
+
+  # Update config/database.yml with your database credentials
+
+  rails db:create
+  rails db:migrate
+  rails g madmin:install # Generate admin dashboards
+  gem install foreman
+  bin/dev
+```
